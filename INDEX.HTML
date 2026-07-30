@@ -1,1 +1,538 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SuaEmpresa | Criação de Sites Premium</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#060b15;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+
+position:fixed;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:rgba(0,0,0,.35);
+backdrop-filter:blur(20px);
+
+z-index:999;
+
+}
+
+.logo{
+
+font-size:30px;
+font-weight:800;
+color:#00e5ff;
+
+}
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin-left:35px;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#00e5ff;
+
+}
+
+.hero{
+
+height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+flex-direction:column;
+padding:20px;
+
+background:
+radial-gradient(circle,#0d4d6a55 0%,transparent 70%);
+
+}
+
+.hero h1{
+
+font-size:65px;
+max-width:900px;
+line-height:1.1;
+
+}
+
+.hero span{
+
+color:#00e5ff;
+
+}
+
+.hero p{
+
+margin-top:25px;
+font-size:20px;
+color:#b7c1d0;
+max-width:700px;
+
+}
+
+.btn{
+
+margin-top:40px;
+
+display:inline-block;
+
+padding:18px 40px;
+
+background:#00e5ff;
+color:#08111c;
+
+border-radius:60px;
+
+font-weight:bold;
+
+text-decoration:none;
+
+transition:.4s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 0 40px #00e5ff;
+
+}
+
+section{
+
+padding:100px 8%;
+
+}
+
+.titulo{
+
+font-size:45px;
+text-align:center;
+margin-bottom:60px;
+
+}
+
+.grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+
+}
+
+.card{
+
+padding:35px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:25px;
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+border-color:#00e5ff;
+
+box-shadow:0 15px 45px rgba(0,229,255,.2);
+
+}
+
+.card h3{
+
+color:#00e5ff;
+margin-bottom:15px;
+
+}
+
+.card p{
+
+color:#bfc8d7;
+
+line-height:1.8;
+
+}
+
+.portfolio{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+
+}
+
+.projeto{
+
+height:220px;
+
+border-radius:20px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:28px;
+font-weight:bold;
+
+background:linear-gradient(135deg,#00c6ff,#0072ff);
+
+transition:.4s;
+
+}
+
+.projeto:hover{
+
+transform:scale(1.05);
+
+}
+
+.depoimentos{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+
+}
+
+.depoimento{
+
+background:#101827;
+
+padding:30px;
+
+border-radius:20px;
+
+}
+
+.depoimento h4{
+
+color:#00e5ff;
+margin-top:20px;
+
+}
+
+.cta{
+
+text-align:center;
+
+}
+
+.cta h2{
+
+font-size:45px;
+
+}
+
+footer{
+
+padding:40px;
+
+text-align:center;
+
+color:#8a96aa;
+
+border-top:1px solid rgba(255,255,255,.1);
+
+}
+
+.whatsapp{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+width:65px;
+
+height:65px;
+
+border-radius:50%;
+
+background:#25D366;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:30px;
+
+text-decoration:none;
+
+color:white;
+
+box-shadow:0 0 25px #25D366;
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+nav{
+
+display:none;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">SuaEmpresa</div>
+
+<nav>
+
+<a href="#servicos">Serviços</a>
+
+<a href="#portfolio">Portfólio</a>
+
+<a href="#depoimentos">Depoimentos</a>
+
+<a href="#contato">Contato</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>
+
+Criamos <span>Sites Premium</span><br>
+
+para empresas que querem vender mais.
+
+</h1>
+
+<p>
+
+Landing Pages, Sites Institucionais e Lojas Virtuais com design moderno, velocidade e foco em conversão.
+
+</p>
+
+<a href="#contato" class="btn">
+
+Solicitar Orçamento
+
+</a>
+
+</section>
+
+<section id="servicos">
+
+<h2 class="titulo">
+
+Nossos Serviços
+
+</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Landing Pages</h3>
+
+<p>Páginas focadas em vendas e geração de clientes.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Sites Institucionais</h3>
+
+<p>Apresente sua empresa com autoridade e profissionalismo.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Lojas Virtuais</h3>
+
+<p>Venda seus produtos 24 horas por dia.</p>
+
+</div>
+
+<div class="card">
+
+<h3>SEO</h3>
+
+<p>Seu site preparado para aparecer no Google.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="portfolio">
+
+<h2 class="titulo">
+
+Projetos
+
+</h2>
+
+<div class="portfolio">
+
+<div class="projeto">
+
+Projeto 01
+
+</div>
+
+<div class="projeto">
+
+Projeto 02
+
+</div>
+
+<div class="projeto">
+
+Projeto 03
+
+</div>
+
+</div>
+
+</section>
+
+<section id="depoimentos">
+
+<h2 class="titulo">
+
+Clientes
+
+</h2>
+
+<div class="depoimentos">
+
+<div class="depoimento">
+
+★★★★★
+
+<p>
+
+Empresa extremamente profissional. O site ficou incrível.
+
+</p>
+
+<h4>Pedro Silva</h4>
+
+</div>
+
+<div class="depoimento">
+
+★★★★★
+
+<p>
+
+Recebemos muito mais clientes depois do novo site.
+
+</p>
+
+<h4>Ana Oliveira</h4>
+
+</div>
+
+<div class="depoimento">
+
+★★★★★
+
+<p>
+
+Entrega rápida e atendimento excelente.
+
+</p>
+
+<h4>Carlos Souza</h4>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cta" id="contato">
+
+<h2>
+
+Vamos criar o seu site?
+
+</h2>
+
+<p style="margin:25px 0;color:#bfc8d7">
+
+Entre em contato agora mesmo e solicite um orçamento.
+
+</p>
+</a>
+
+</section>
+
+<footer>
+
+© 2026 SuaEmpresa • Todos os direitos reservados.
+
+</footer>
+
+<a class="whatsapp" href="https://wa.me/5511939627628">
+
+💬
+
+</a>
+
+</body>
+
+</html>
